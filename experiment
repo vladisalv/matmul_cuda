@@ -1,0 +1,13 @@
+#!/bin/bash
+
+I=1792
+LIMIT=2048
+
+touch result
+
+while [ "$I" -le "$LIMIT" ]
+do
+	./bin/debug/PROGRAM -m $I -n $I -p $I --sizeX 32 --sizeY 32 --fast 3 | tee -a result;
+	I=`expr $I + 1`
+	sleep 0.5
+done

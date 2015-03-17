@@ -1,0 +1,9 @@
+:e src/main.cu
+:tabnew src/gpu.cu
+:60 vs include/gpu.h
+:tabnew src/gpu2.cu
+:tabnew src/options.cpp
+:60 vs include/options.h
+:tabnew src/matrix.cu
+:60 vs include/matrix.h
+gt
